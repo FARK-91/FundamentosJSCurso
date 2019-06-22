@@ -42,3 +42,19 @@ function imprimirProfesiones(persona) {
 }
 
 imprimirProfesiones(sacha)
+
+var renier = {
+  nombre: 'Renier',
+  apellido: 'Ferrer',
+  edad: 28
+}
+
+function imprimirSiEsMayorDeEdad(persona){
+  if (persona.edad > 18){
+    console.log(`${persona.nombre} es mayor de edad, tiene: ${persona.edad} años`)
+  } else {
+    console.log(`${persona.nombre} no es mayor de edad, tiene: ${persona.edad} años`)
+  }
+}
+
+imprimirSiEsMayorDeEdad(renier)
