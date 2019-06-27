@@ -48,10 +48,16 @@ function imprimirProfesiones(persona) {
 
 const MAYORIA_DE_EDAD = 18
 
+// RENIER: Podemos asignarle una funcion a una variable
 // const esMayorDeEdad = function (persona) {
 //   return persona.edad >= MAYORIA_DE_EDAD
 // }
-const esMayorDeEdad = ({ edad }) => edad >= MAYORIA_DE_EDAD
+
+// RENIER: Esto es un Arrow Function
+const esMayorDeEdad = persona => persona.edad >= MAYORIA_DE_EDAD
+// Seria lo mismo escribirla de la siguiente manera, pero tomando en cuenta que
+// solo se vaya a acceder a un parametro 
+// const esMayorDeEdad = ({ edad }) => edad >= MAYORIA_DE_EDAD
 
 function imprimirSiEsMayorDeEdad(persona) {
   if (esMayorDeEdad(persona)) {
