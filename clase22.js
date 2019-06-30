@@ -5,6 +5,7 @@ function Persona(nombre, apellido, altura) {
 }
 
 Persona.prototype.saludar = () => {
+  debugger
   console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
 }
 

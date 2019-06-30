@@ -14,9 +14,14 @@ class Persona {
   }
 }
 
+// RENIER: Este es el modo de heredar una clase existente
 class Desarrollador extends Persona {
-  constructor(nombre, apellido, altura) {
+  constructor(nombre, apellido, altura, skills) {
+    // RENIER: Inmediatamente despues de declarar el constructor, procedemos a
+    // llamar el medoto super para luego desarrollar nuestra herencia.
+    // ANTES DEL SUPER NO PUEDES ESCRIBIR NINGUNA LINEA DE CODIGO
     super(nombre, apellido, altura)
+    this.skills = skills
   }
 
   saludar() {
@@ -27,4 +32,4 @@ class Desarrollador extends Persona {
 
 // var sacha = new Persona('Sacha', 'Lifszyc', 1.72)
 // var erika = new Persona('Erika', 'Luna', 1.65)
-// var arturo = new Persona('Arturo', 'Martinez', 1.89)
+// var arturo = new Desarrollador('Arturo', 'Martinez', 1.89)
