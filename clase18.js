@@ -36,6 +36,7 @@ var paula = {
 
 const esAlta = ({ altura }) => altura > 1.8
 
+
 var personas = [sacha, alan, martin, dario, vicky, paula]
 
 var personasAltas = personas.filter(esAlta)
@@ -44,3 +45,12 @@ var personasAltas = personas.filter(esAlta)
 // })
 
 console.log(personasAltas)
+
+// #PlatziReto
+const esBaja = persona => persona.altura < 1.75
+var personasBajas = personas.filter(esBaja)
+
+console.log('Personas + Bajas del array:')
+for (i=0;i<personasBajas.length;i++){
+  console.log(`${personasBajas[i].nombre} mide: ${personasBajas[i].altura}`)
+}

@@ -63,7 +63,11 @@ var personasCms = personas.map(pasarAlturaACms)
 //   acum = acum + personas[i].cantidadDeLibros
 // }
 
-const reducer = (acum, { cantidadDeLibros }) => acum + cantidadDeLibros
+// const reducer = (acum, { cantidadDeLibros }) => acum + cantidadDeLibros
+
+const reducer = (acum, persona) => {
+  return acum + persona.cantidadDeLibros
+}
 
 var totalDeLibros = personas.reduce(reducer, 0)
 
