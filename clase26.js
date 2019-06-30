@@ -36,6 +36,7 @@ class Desarrollador extends Persona {
   }
 }
 
+// RENIER: Se define la funcion responderSaludo
 function responderSaludo(nombre, apellido, esDev) {
   console.log(`Buen día ${nombre} ${apellido}`)
   if (esDev) {
@@ -48,5 +49,8 @@ var erika = new Persona('Erika', 'Luna', 1.65)
 var arturo = new Desarrollador('Arturo', 'Martinez', 1.89)
 
 sacha.saludar()
+// RENIER: Se envia la funcion como parametro de otra function
+// tomando en cuenta que que la funcion enviada se desarrollara en la funcion
+// que receptora.
 erika.saludar(responderSaludo)
 arturo.saludar(responderSaludo)
