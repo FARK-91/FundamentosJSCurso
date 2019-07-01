@@ -6,6 +6,7 @@ function obtenerPersonaje(id, callback) {
   const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
 
   $.get(url, opts, function (persona) {
+    console.log(arguments)
     console.log(`Hola, yo soy ${persona.name}`)
 
     if (callback) {
@@ -27,3 +28,6 @@ obtenerPersonaje(1, function () {
     })
   })
 })
+
+
+// RENIER: Practicando
