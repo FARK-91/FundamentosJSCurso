@@ -1,0 +1,49 @@
+Clase #6 - Objetos
+
+Sintaxis:
+// Definicion del Objetos
+var nombre_variable = {
+
+  atributo_clave1 = 'atributo_valor1',
+  atributo_clave2 = 'atributo_valor2',
+
+}
+
+Ejemplo1:
+
+// Definimos una persona como objeto
+
+var sacha = {
+  nombre: 'Sacha',
+  apellido: 'Lifszyc',
+  edad: 28
+}
+
+// Accedemos a sus datos por medio de una function
+
+function acceso(persona){
+
+  var nombre = persona.nombre.toUpperCase()
+  var apellido = persona.apellido
+  var edad = persona.edad
+  console.log(nombre)
+  console.log(apellido)
+  console.log(edad)
+
+}
+
+acceso(sacha)
+
+Ejemplo2:
+
+// Como desglosar un objeto por medio de una función para solo obtener
+// un atributo del mismo.
+
+function acceso({nombre}){
+
+  var nombre = nombre.toUpperCase()
+  console.log(nombre)
+
+}
+
+acceso(sacha)
