@@ -1,0 +1,19 @@
+Clase #4 - Funciones
+
+Sintaxis:
+
+function nombre_funcion (parametros) {
+	
+	cuerpo_de_la_funcion
+
+}
+
+Ejemplo:
+
+var = nombre = 'Renier', edad = 28
+
+function imprimirEdad(n , e) {
+  console.log(`${n} tiene ${e} años`)
+}
+
+imprimirEdad(nombre, edad)
