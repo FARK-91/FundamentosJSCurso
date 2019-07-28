@@ -1,4 +1,4 @@
-Clase #18 - Filtar arrays.txt
+Clase #18 - Maps y Filtar arrays.txt
 
 Tenemos claro que un array es un conjuntos de valores posicionados.
 
@@ -22,3 +22,31 @@ personas = [renier]
 var esMayor = ({ altura }) => altura > 1.8
 
 var result = personas.filter(esMayor(renier))
+
+// Funcion MAP, esta funcion lo que hace es modificar el array actual y devolver un nuevo array. Siempre recibe como parametro una funcion.
+
+Sintaxis:
+
+var nombre_variable = nombre_array.map(function)
+
+Ejemplo:
+
+var renier = {
+	nombre : 'Renier',
+	apellido : 'Ferrer',
+	altura : '1.75',
+
+}
+
+personas = [renier]
+
+// PODEMOS DEFINIR EL RETURN DE UN ARROW FUNCTION SIMPLEMENTE COLOCANDO LAS LLAVES QUE ENCIERRAN EL CUERPO DEL ARROW ENTRE PARENTESIS..... LOS PARETESIS DEFINEN EL RETURN
+
+var alturaACms = persona => ({
+	// Desglosamos el objeto para que no altere sus valores para siempre.
+	...persona
+	persona.altura *= 100
+
+})
+
+var result = personas.map(alturaACms)
