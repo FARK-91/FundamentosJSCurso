@@ -1,6 +1,12 @@
 Resumen, detalles y anotaciones:
 
-Rama					                       Contenido					                  Archivo:
-clase4-funciones			     Estructura basica de una funcion.		Clase #4 - Funciones.txt
-clase6-objetos				     Desglose de atributos por clases.		Clase #6 - Objetos.txt
-clase8-parametros-como     Pasando un objeto como parametro     Clase #8 - Objetos_como_parametros_de_una_funcion.txt
+Rama					                       Contenido			Archivo:
+clase4-funciones			     Estructura basica de una funcion.			Clase #4 - Funciones.txt
+
+clase6-objetos				     Desglose basico de atributos por clases.		Clase #6 - Objetos.txt
+
+clase8-parametros-como     		     Pasando un objeto como parametro     		Clase #8 - Objetos_como_parametros_de_una_funcion.txt
+
+Clase #12 - Arrow Function		     Arrow Functions					Clase #12 - Arrow Function
+
+clase18-filtrar-arrays     		     Filtrar Arrays					Clase #18 - Filtar arrays.txt
