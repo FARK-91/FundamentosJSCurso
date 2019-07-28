@@ -1,0 +1,39 @@
+Clase #8 - Objetos_como_parametros_de_una_funcion.txt.
+
+Debemos tener cuidado al intentar pasar un objeto completo como parametro de una funcion, ya que si lo hacemos y alteramos sus atributos, estos se veran afectados para siempre.
+
+Ejemplo:
+
+// Si tengo este objeto/
+
+var renier = {
+  nombre: 'Renier',
+  apellido: 'Ferrer',
+  edad: 28
+}
+
+// Tengo esta funcion, su retorno altera el valor edad del objeto renier.
+
+function cumpleanos(persona) {
+
+	persona.edad =+ 1  
+}
+
+// Lo paso a esta funcion como parametro
+
+cumpleanos(renier)
+
+// Para que lo anterior no ocurra, debemos manejar el pase del objeto de esta forma:
+
+function cumpleanos(persona) {
+
+  return {
+    // Desglosamos el objeto marcando tres puntos + el objeto pasado por el parametro persona (...persona)
+    // Podemos modificar sus antiguos atributos, solo dentro de esta funcion y tambien declarar nuevos attributos.
+    // Manteniendo los valores de atributos intactos para siempre, o sea fuera de esta funcion.
+    ...persona,
+    edad: persona.edad + 1,
+    nuevo_parametro : 'Nuevo valor'
+
+  }
+}
