@@ -1,0 +1,53 @@
+Clase #12 - Arrow Function
+
+JS nos permite asignar una funcion a una variable y luego invocarla, el valor de la variable tendra el retorno de la funcion.
+
+Sintaxis para lograrlo:
+
+var nombre_variable = function (parametro){
+	return valor
+}
+
+// Para invocarla debemos llamar la variable y pasarle el parametro.
+
+nombre_variable(parametro)
+
+Sintaxis con Arrow Function
+
+var nombre_variable = parametro => {
+	return valor
+}
+
+// Cuando el cuerpo del arrow es una sola linea de codigo podemos resumirla de esta manera.
+
+var nombre_variable = parametro => valor
+
+Ejemplo1:
+
+var juan = {
+  nombre: 'Juan',
+  apellido: 'Gomez',
+  edad: 13
+}
+
+const esMayorDeEdad = persona => persona.edad >= MAYORIA_DE_EDAD
+
+esMayorDeEdad(juan)
+
+// Como desglosar un objeto dentro de un arrow function
+
+Sintaxis:
+
+var nombre_variable = ({atributo_objeto}) => cuerpo de una sola linea
+
+Ejemplo2:
+
+var juan = {
+  nombre: 'Juan',
+  apellido: 'Gomez',
+  edad: 13
+}
+
+const esMayorDeEdad = ({edad}) => edad >= MAYORIA_DE_EDAD
+
+esMayorDeEdad(juan)
