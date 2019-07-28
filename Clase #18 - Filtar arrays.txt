@@ -1,0 +1,24 @@
+Clase #18 - Filtar arrays.txt
+
+Tenemos claro que un array es un conjuntos de valores posicionados.
+
+para poder acceder a esos valores eventualmente necesitamos iterar sobre el array, en este caso tenemos un apoyo con la funcion filter(), donde ducha funcion recibe como parametro una condicion SIEMPRE, el resultado que nos devuelve son los valores dentro del array que coincidan con la condicion.
+
+Sintaxis
+
+var nombre_variable = nombre_array.filter(condicion)
+
+Ejemplo:
+
+var renier = {
+	nombre : 'Renier',
+	apellido : 'Ferrer',
+	altura : '1.75',
+
+}
+
+personas = [renier]
+
+var esMayor = ({ altura }) => altura > 1.8
+
+var result = personas.filter(esMayor(renier))
