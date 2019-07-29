@@ -11,6 +11,15 @@ Persona.prototype.saludar = function () {
 var sacha = new Persona('Sacha', 'Lifszyc')
 var erika = new Persona('Erika', 'Luna')
 var arturo = new Persona('Arturo', 'Martinez')
+// Pasando un 3er atributo a un prototipo de 2 atributos ya creado
+// Para lograr esto puedo reescribir el prototipo.
+function Persona(nombre, apellido, altura) {
+  this.nombre = nombre
+  this.apellido = apellido
+  this.altura = altura
+}
+
+var renier2 = new Persona('Renier2','Ferrer2','1.75')
 
 // Practicando
 

@@ -1,0 +1,34 @@
+Clase #21 - Prototipos o Clases
+
+Como definimos un Prototipo o tambien llamado Contructor:
+
+function Persona(nombre, apellido) {
+  this.nombre = nombre
+  this.apellido = apellido
+}
+
+Segun entiendo un prototipo es un canal estandar para crear un nuevo objeto, segun atributos definidos en el prototipo, siempre para crear un nuevo objeto es necesario llamar a la palabra reservada New junto con el nombre y parametros del prototipo.
+
+Ejemplo:
+
+var renier = new Persona('Renier', 'Ferrer')
+
+El resultado sera un nuevo objeto adinado a la variable renier con los atributos nombre y apellido almacenados.
+
+
+Otra caracteristica de los prototipos es que podemos crearle acciones predeterminadas, para hacer esto debemos mapear el prototipo, indicando el nombre de la accion seguido de la funcion que activa la accion.
+
+Sintaxis:
+
+Nombre_prototipo.prototype.saludar = function() {
+	Cuerpo_de_la_funcion
+}
+
+Ejemplo:
+
+Persona.prototype.saludar = function () {
+  console.log(`Hola, me llamo ${this.nombre} ${this.apellido}`)
+}
+
+
+Nota: es importante que todas las acciones se coloquen juntas y siempre definirlas antes de invocarlas ya que si lo hacemos al reves primero (invocamos), nos dara un error.
