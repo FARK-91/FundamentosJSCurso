@@ -1,0 +1,8 @@
+Clase #22 - sentencia this en las arrow fuctions
+
+Es importante saber que la palabra reservada this no tiene el mismo valor si la llamamos desde una funcion a si la llamamos desde un arrow function.
+
+- Si la llamamos desde una funcion, su valor estara dominado por el prototipo declarado.
+- Mientras que si la llamamos desde un arrow function, su valor sera igual a la variable global window, mas no lo que se definio desde el prototipo.
+
+Nora: por eso se recomienda nunca llamar a this desde un arrow function.
