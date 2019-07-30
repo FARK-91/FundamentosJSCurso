@@ -1,12 +1,20 @@
-Resumen, detalles y anotaciones:
+cd Resumen, detalles y anotaciones:
 
 Rama					                       Contenido			Archivo:
-clase4-funciones			     Estructura basica de una funcion.			Clase #4 - Funciones.txt
+Clase4-funciones			     Estructura basica de una funcion.			Clase #4 - Funciones.txt
 
-clase6-objetos				     Desglose basico de atributos por clases.		Clase #6 - Objetos.txt
+Clase6-objetos				     Desglose basico de atributos por clases.		Clase #6 - Objetos.txt
 
-clase8-parametros-como     		     Pasando un objeto como parametro     		Clase #8 - Objetos_como_parametros_de_una_funcion.txt
+Clase8-parametros-como     		     Pasando un objeto como parametro     		Clase #8 - Objetos_como_parametros_de_una_funcion.txt
 
 Clase #12 - Arrow Function		     Arrow Functions					Clase #12 - Arrow Function
 
-clase18-filtrar-arrays     		     Filtrar Arrays					Clase #18 - Filtar arrays.txt
+Clase18-filtrar-arrays     		     Filtrar Arrays					Clase #18 - Filtar arrays.txt
+
+clase21-prototipos			     Prototipos						Clase #21 - Prototipos
+
+clase22-modificando-protitpos		     Quien es this dentro de las arrow function		clase22-modificando-protitpos.txt
+
+clase25-clases-en-js			     Como crear y heredar clases en JS  		clase25-clases-en-js.txt
+
+clase32-promesas			     Como crear promesas en JS				clase32-promesas.txt
