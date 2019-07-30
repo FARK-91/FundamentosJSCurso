@@ -1,0 +1,55 @@
+clase #32 - Promesas
+
+Es la forma de resolver inteligentemente el posible error que nos puede devolver un API, como no sabemos que dificultades pueda tener el API entonces creamos las promesas, quien se encargara de manejar la respuesta positiva o negativa, con un resultado distinto para cada caso.
+
+Sintaxis:
+
+new Promise((resolve, reject) => {
+	cuerpo de la promesa
+
+	resolve(resultado_positivo)
+
+	reject(resultado_negativo)	
+})
+
+Ejemplo:
+
+**********************************************************************************************
+
+function obtenerPersonaje(id) {
+
+  return new Promise((resolve, reject) => {
+    const url = `${API_URL}${PEOPLE_URL.replace(':id', id)}`
+    
+    $
+      .get(url, opts, function (data) {
+        // Si se ejecuta el request de forma correcta, enviamos del parametro,
+        // data a la funcion .then
+        resolve(data)
+      })
+      // De ocurrir un error en el request, mandamos el id a la cuncion .catch
+      .fail(() => reject(id))
+    })
+}
+************************************************************************************************
+
+function onError(id) {
+  console.log(`Sucedió un error al obtener el personaje ${id}`)
+}
+
+************************************************************************************************
+//Invocamos la funcion
+obtenerPersonaje(1)
+
+// Dependiendo de la respuesta del API tomamos acciones diferentes en caso positivo o negativo.
+  .then(function (personaje) {
+    console.log(`El personaje 1 es ${personaje.name}`)
+  })
+  .catch(onError)
+
+Nota:
+
+La promesa siempre recibe los parametros resolve y reject, ambos con instrucciones distintas dependiendo de la respuesta, que hayan obtenido.
+
+Los escucha .then() y .catch() siempre desarrollan una funcion como parametro.
+
