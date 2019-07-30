@@ -1,0 +1,44 @@
+clase #25 - Como crear y heredar clases en JS
+
+Lo primero que debemos tener en cuenta es que una clase en Js sigue siendo por debajo un prototipo.
+
+Sitanxis:
+
+class nombre_clase {
+	constructor(atributo1, atributo2, atributo3){
+		this.atributo1 = atributo1
+		this.atributo2 = atributo2
+		this.atributo3 = atributo3
+	}
+	
+	function1(){
+		cuerpo de la funcion 1
+	}
+
+	function2(){
+		cuerpo de la funcion 2
+	}
+}
+
+HERENCIA: 
+
+class nombre_nueva_clase extends nombre_clase{
+	contructor(atributo1, atributo2, atributo3, atributo4){
+		super(atributo1, atributo2, atributo3)
+		this.skills = skills
+	}
+
+	function1(){
+		cuerpo de la funcion 1 
+	}
+
+	function3(){
+		cuerpo de la funcion 3 
+	}
+}
+
+Nota importante: Inmediatamente despues de declarar el constructor, procedemos a
+     		 llamar el medoto super para luego desarrollar nuestra herencia.
+     		 ANTES DEL SUPER NO PUEDES ESCRIBIR NINGUNA LINEA DE CODIGO
+
+
